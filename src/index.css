@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #12080c;
+  --color-secondary: #ffffff;
+  --color-accent: #c989a8;
+  --color-gold: #c4a46a;
+
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --text-eyebrow: 0.68rem;
+  --text-caption: 0.78rem;
+  --text-nav: 0.72rem;
+  --text-body: 1.02rem;
+  --text-lead: 1.08rem;
+  --text-quote: 1.35rem;
+  --text-card: 1.35rem;
+  --text-stat: clamp(2.1rem, 3vw, 2.85rem);
+  --text-heading: clamp(2.05rem, 4vw, 3.35rem);
+  --text-display: clamp(2.55rem, 6vw, 4.85rem);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 55%, transparent);
+  color: var(--color-secondary);
+}
+
+.site-shell {
+  overflow-x: hidden;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.hairline {
+  background: color-mix(in srgb, var(--color-gold) 40%, transparent);
+}
+
+.brand-mark {
+  pointer-events: none;
+  user-select: none;
+}
+
+.section-y {
+  padding-block: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .section-y {
+    padding-block: 6rem;
+  }
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion-panel.is-open {
+  grid-template-rows: 1fr;
+}
+
+.accordion-panel-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.accordion-copy {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.05s,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion-panel.is-open .accordion-copy {
+  opacity: 1;
+  transform: none;
+}
+
+.accordion-icon {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion-icon.is-open {
+  transform: rotate(45deg);
+}
