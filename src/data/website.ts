@@ -6,7 +6,7 @@ export const website = {
   nav: {
     links: [
       { label: "About", href: "#story" },
-      { label: "Our Services", href: "#services" },
+      { label: "What We Do", href: "#services" },
       { label: "Deal Advisory", href: "#deal-advisory" },
       { label: "Leadership", href: "#leadership" },
       { label: "Global Presence", href: "#presence" },
@@ -22,12 +22,12 @@ export const website = {
       line3: "Deals Closed with Discretion.",
     },
     description:
-      "Acconcy Finance is a corporate finance and deals advisory firm serving mid-market and enterprise clients across fund raising, deal advisory, and distressed M&A, bringing structuring rigour and senior-level attention to every mandate.",
-    primaryCta: { label: "Our Services", href: "#services" },
-    secondaryCta: { label: "Our Story", href: "#story" },
+      "Acconcy Finance is a specialised corporate finance and advisory firm engineered for high-stakes financial decisions, advising middle-market corporations, private equity sponsors, lenders, and distressed stakeholders across every economic cycle.",
+    primaryCta: { label: "What We Do", href: "#services" },
+    secondaryCta: { label: "About Us", href: "#story" },
     callout: {
       eyebrow: "Firm Philosophy",
-      lines: ["One advisor.", "Three disciplines, fully aligned."],
+      lines: ["Senior-led advisory.", "Institutional standards."],
     },
   },
   stats: [
@@ -38,20 +38,20 @@ export const website = {
   ],
   story: {
     id: "story",
-    eyebrow: "Our Story",
+    eyebrow: "About Us",
     headline: {
-      before: "A firm built on ",
-      accent: "structure,",
-      after: " judgment and execution.",
+      before: "Engineered for ",
+      accent: "high-stakes",
+      after: " financial decisions.",
     },
     paragraphs: [
-      "Acconcy Finance was established to give companies and investors a single point of accountability across the capital lifecycle, from raising debt and equity, to executing a sale or acquisition, to steering a business through distress and back to stability.",
-      "Each mandate is led senior-to-senior. We do not hand engagements down a chain of junior teams; the people who scope the transaction are the people who close it.",
+      "Acconcy Finance is a specialised corporate finance and advisory firm engineered for high-stakes financial decisions. We advise middle-market corporations, private equity sponsors, lenders, and distressed stakeholders on unlocking capital, preserving enterprise value, and executing complex transactions across every economic cycle.",
+      "Drawing from the institutional standards set by global restructuring powerhouses like Houlihan Lokey, Lazard, and Rothschild & Co, Acconcy Finance bridges the gap between bulge-bracket execution and agile, senior-led client advisory.",
     ],
     image:
       "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80",
     quote: {
-      text: "We are not measured by the size of the deal. We are measured by whether the client was right to trust us with it.",
+      text: "Real enterprise value is proven in volatile markets. We give business owners, lenders, and investors the certainty required to navigate transition and capture opportunity.",
       attribution: "Acconcy Finance",
     },
     captions: [
@@ -62,38 +62,38 @@ export const website = {
   },
   services: {
     id: "services",
-    eyebrow: "Our Services",
+    eyebrow: "What We Do",
     headline: {
       before: "Three disciplines. ",
       accent: "One",
       after: " standard of execution.",
     },
     intro:
-      "Every engagement draws on the same core capability: capital markets fluency, transaction execution, and situational judgment, applied to the problem in front of us.",
+      "We advise on unlocking capital, preserving enterprise value, and executing complex transactions across distressed situations, deal advisory, and corporate finance.",
     cards: [
       {
-        id: "fund-raising",
-        nameLines: ["Fund Raising"],
-        caption: "Debt Syndication & Equity Financing",
+        id: "distressed-ma",
+        nameLines: ["Distressed M&A"],
+        caption: "Restructuring & Special Situations",
         extended:
-          "Acconcy Finance structures and arranges capital across the balance sheet, from working capital and term loans to structured, mezzanine, project and acquisition finance, syndicated across banks, NBFCs and institutional lenders. On the equity side, we support private placements, growth capital raises, and structured equity instruments.",
-        image: "/images/services/fund-raising.jpg",
+          "Rapid asset divestitures, out-of-court liability management, capital structure optimization, and special-situations execution for underperforming or over-leveraged businesses.",
+        image: "/images/services/distressed-ma.jpg",
       },
       {
         id: "deal-advisory",
         nameLines: ["Deal Advisory"],
-        caption: "Sell-Side & Buy-Side",
+        caption: "Buy-Side & Sell-Side",
         extended:
-          "We run the full transaction process for sellers and buyers alike. On the sell side, we prepare the business, position it to the right buyer universe, and manage the process to close. On the buy side, we identify targets, lead diligence, and support negotiation and structuring.",
+          "End-to-end buy-side and sell-side transaction management, business valuations, target identification, and strategic post-merger alignment.",
         image: "/images/services/deal-advisory.jpg",
       },
       {
-        id: "distressed-ma",
-        nameLines: ["Distressed M&A"],
-        caption: "Special Situations Advisory",
+        id: "corporate-finance",
+        nameLines: ["Corporate Finance"],
+        caption: "Capital Raising & Liquidity",
         extended:
-          "We advise across the distressed transaction lifecycle: restructuring-linked sales, stressed-asset acquisitions, and special-situation deal structures, working alongside lenders, resolution professionals, and stakeholders to protect value where conditions are least forgiving.",
-        image: "/images/services/distressed-ma.jpg",
+          "Debt and equity capital raising, balance sheet restructuring, refinancing strategy, and long-term liquidity engineering.",
+        image: "/images/services/fund-raising.jpg",
       },
     ],
   },
@@ -143,7 +143,7 @@ export const website = {
       accent: "Confidence.",
     },
     description:
-      "For promoters, boards, and investors seeking a disciplined partner across capital raising, transactions, and distressed situations, our team welcomes a confidential introduction.",
+      "For business owners, lenders, and investors seeking certainty through transition, our team welcomes a confidential introduction across corporate finance, deal advisory, and distressed situations.",
     button: "Contact Acconcy Finance",
   },
   contact: {
@@ -158,13 +158,13 @@ export const website = {
   },
   footer: {
     tagline:
-      "A corporate finance and deals advisory firm providing fund raising, deal advisory, and distressed M&A services to mid-market and enterprise clients.",
+      "A specialised corporate finance and advisory firm engineered for high-stakes financial decisions across distressed M&A, deal advisory, and corporate finance.",
     columns: [
       {
         heading: "Firm",
         links: [
           { label: "About", href: "#story" },
-          { label: "Our Story", href: "#story" },
+          { label: "About Us", href: "#story" },
           { label: "Leadership", href: "#leadership" },
           { label: "Contact", href: "#contact" },
         ],
@@ -172,9 +172,9 @@ export const website = {
       {
         heading: "Services",
         links: [
-          { label: "Fund Raising", href: "#fund-raising" },
-          { label: "Deal Advisory", href: "#deal-advisory" },
           { label: "Distressed M&A", href: "#distressed-ma" },
+          { label: "Deal Advisory", href: "#deal-advisory" },
+          { label: "Corporate Finance", href: "#corporate-finance" },
         ],
       },
       {
