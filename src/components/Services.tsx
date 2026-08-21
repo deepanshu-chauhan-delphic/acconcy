@@ -81,7 +81,7 @@ export function Services() {
                       <div className="mx-auto mt-6 h-px w-16 bg-gold" />
                       <p className="mt-6 text-caption uppercase tracking-[0.16em] text-secondary/75">{card.caption}</p>
                     </div>
-                    <p className="max-h-0 overflow-hidden text-caption font-light leading-relaxed text-secondary/80 opacity-0 transition-all duration-500 group-hover:max-h-48 group-hover:opacity-100">
+                    <p className="max-h-0 overflow-hidden text-caption font-light leading-relaxed text-secondary/80 opacity-0 transition-all duration-500 group-hover:max-h-56 group-hover:opacity-100">
                       {card.extended}
                     </p>
                   </div>
